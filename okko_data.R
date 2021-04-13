@@ -36,7 +36,7 @@ data_for_map$rating <- -log(data_for_map$freq/sum(data_for_map$freq))
 
 okko_map <- plot_usmap(data = data_for_map, values = 'rating', labels = TRUE)+
               scale_fill_continuous(name = "Visit", 
-                        low = "red", high = "white",
+                        low = "#69b3a2", high = "white",
                         label = scales::comma)+
-              labs(title = "Origins of OKKO's Visitors", 
+              labs(title = "Origins of OKKO's Visitors",
               caption = "Source: Liwen Li")
